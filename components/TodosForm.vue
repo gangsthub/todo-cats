@@ -29,16 +29,13 @@
 </template>
 
 <script setup lang="ts">
-import { Ref } from 'vue';
-
 const $emit = defineEmits<{
   (event: 'addTodo', value: string): void;
   (event: 'updateTitle', value: string): void;
 }>();
 
-const {
-  public: { FF_BUTTON_COLOR },
-} = useRuntimeConfig();
+const { $useEnvVar } = useNuxtApp();
+const FF_BUTTON_COLOR = $useEnvVar('FF_BUTTON_COLOR');
 
 const listTitle = ref('');
 const currentTodo = ref('');

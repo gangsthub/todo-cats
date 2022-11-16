@@ -12,6 +12,7 @@
     "nuxt-windicss": "^2.5.3"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.4.3"
+    "@pinia/nuxt": "^0.4.3",
+    "nuxt-module-example-custom-devtools": "/Users/paul.melero/htdocs/mio/custom-devtools/"
   }
 }
