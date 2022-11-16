@@ -1,6 +1,8 @@
 <template>
   <Todos class="mt-4" />
-  <DevToolsWrapper />
+  <DevToolsWrapper>
+    <!-- <DevtoolsAddTodo /> -->
+  </DevToolsWrapper>
 </template>
 
 <script lang="ts">
