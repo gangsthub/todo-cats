@@ -3,7 +3,7 @@
     <ul class="c-border-top relative my-4 py-4">
       <li
         v-for="item in orderedItems"
-        class="bg-gray-100 flex align-baseline justify-start mb-1 p-2"
+        class="bg-gray-100 flex align-baseline justify-start mb-1 p-2 shadow-md"
         :key="item.id"
       >
         <TodoItem
@@ -41,8 +41,8 @@ const props = defineProps<{
 }>();
 
 const $emit = defineEmits<{
-  (event: 'updateTodo', value: TodoItem): void;
-  (event: 'removeTodo', value: TodoItem): void;
+  (event: 'update-todo', value: TodoItem): void;
+  (event: 'remove-todo', value: TodoItem): void;
 }>();
 
 const orderedItems = computed(() => {
