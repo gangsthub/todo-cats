@@ -6,9 +6,5 @@
 </template>
 
 <script lang="ts">
-definePageMeta({ layout: 'default' });
-
-export default {
-  name: 'IndexPage',
-};
+definePageMeta({ layout: 'default', name: 'Home' });
 </script>
